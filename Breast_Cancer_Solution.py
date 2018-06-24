@@ -23,6 +23,7 @@ predictions = dt.predict(X_test)
 
 # Confusion Matrix
 confusion=confusion_matrix(Y_test,predictions)
+print("Confustion Matrix:")
 print(confusion)
 print(accuracy_score(Y_test,predictions))
 print(classification_report(Y_test,predictions))
